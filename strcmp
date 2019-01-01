@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+
+char strcmpr(char *str1,char *str2){
+    int i,j=0;
+    while(str1[i]!='\0'){
+        i++;
+    }
+    while(str2[j]!='\0'){
+        j++;
+    }
+    if(i>j)
+        printf("length of str1 > str2");
+    else
+        printf("length of str2 > str1");
+    printf("%d%d",i,j);
+}
+
+int main(){
+    char ch=strcmpr("thi","india");
+    return 0;
+}
